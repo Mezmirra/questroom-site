@@ -4,7 +4,7 @@ var concatCss = require('gulp-concat-css');
 var cleanCSS = require('gulp-clean-css');
  
 gulp.task('css', function() {
-    return gulp.src('app/styles/bootstrap.less')
+    return gulp.src('app/less/bootstrap.less')
         .pipe(less())
         .pipe(concatCss('project.css', {rebaseUrls: false}))
         .pipe(cleanCSS())
@@ -12,7 +12,7 @@ gulp.task('css', function() {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('app/styles/*.less', ['css']);
+    gulp.watch('app/less/*.less', ['css']);
 });
 
 gulp.task('default', ['css', 'watch']);
