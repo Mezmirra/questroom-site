@@ -1,7 +1,7 @@
 /* Colors for my Website */
 
 @white: #ffffff;
-@bright-red: #ef4035;
+@red: #ef4035;
 @red-trans: rgba(239,64,53,0.57);
 @gray: #cccccc;
 @black: #252525;
@@ -16,14 +16,16 @@ html {
     font-family: @base-font;
     background-color: @black;
     color: @white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .outer-container {
     overflow: hidden;
 }
 
-.inner-container {
-    max-width: 1100px;
+.container {
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -31,11 +33,4 @@ html {
     content: "";
     display: table;
     clear: both;
-}
-
-@media screen and (max-width: 1240px) {
-    
-    .inner-container {
-        max-width: 90%;
-    }
 }

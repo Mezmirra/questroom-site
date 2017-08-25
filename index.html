@@ -10,42 +10,48 @@
 <body>
    <header class="header outer-container">
      <!-- Header Top Panel -->
-      <div class="header__top-panel">
-          <div class="header__top-panel-message">Have Fun!</div>
-          <div class="header__top-panel-info">
-              <div class="header__top-panel-info-contacts">
-                  <i></i>
-                  <span class="header__top-panel-info-contacts-text">11559 Ventura Boulevard, Studio City, CA 91604</span> 
-              </div>
-              <div class="header__top-panel-info-search"></div>
+      <div class="header__top-panel clearfix">
+         <div class="container">
+            <div class="header__top-panel-message">HAVE FUN!</div>
+            <div class="header__top-panel-info">
+                <div class="header__top-panel-info-contacts">
+                    <i></i>
+                    <span class="header__top-panel-info-contacts-text">11559 Ventura Boulevard, Studio City, CA 91604</span> 
+                </div>
+            <div class="header__top-panel-info-search"></div>
           </div>
+         </div>
       </div>
       <!-- Header Top Panel END -->
       <!-- Header Menu Panel -->
       <div class="header__menu-panel">
-          <div class="header__menu-panel-logo">
+         <div class="container">
+            <div class="header__menu-panel-logo">
              <a href="#" class="header__menu-panel-logo-link">
-                 <img src="#" alt="Escapade" class="header__menu-panel-logo-img">
+                 <img src="/app/img/logo.png" alt="Escapade" class="header__menu-panel-logo-img">
              </a>
-          </div>
+            </div>
           <nav class="header__menu-panel-navigation">
               <ul class="header__menu-panel-navigation-menu">
-                  <li class="header__menu-panel-navigation-menu-item">Home</li>
-                  <li class="header__menu-panel-navigation-menu-item">About</li>
-                  <li class="header__menu-panel-navigation-menu-item">Pages</li>
-                  <li class="header__menu-panel-navigation-menu-item">Projects</li>
-                  <li class="header__menu-panel-navigation-menu-item">Blog</li>
-                  <li class="header__menu-panel-navigation-menu-item">Contacts</li>
+                  <li class="header__menu-panel-navigation-menu-item"><a href="#">Home</a></li>
+                  <li class="header__menu-panel-navigation-menu-item"><a href="#">About</a></li>
+                  <li class="header__menu-panel-navigation-menu-item"><a href="#">Pages</a></li>
+                  <li class="header__menu-panel-navigation-menu-item"><a href="#">Projects</a></li>
+                  <li class="header__menu-panel-navigation-menu-item"><a href="#">Blog</a></li>
+                  <li class="header__menu-panel-navigation-menu-item"><a href="">Contacts</a></li>
               </ul>
           </nav>
+         </div>
       </div>
       <!-- Header Menu Panel END -->
    </header>
    <main class="content outer-container">
        <section class="entry-section">
-           <span>ESCAPADE</span>
+          <div class="container">
+            <span class="entry-section__company-name">ESCAPADE</span>
            <span>ENJOY A COOL INDOORS FUN!</span>
            <a href="#">Read more</a>
+          </div>
        </section>
        <section class="numbered_section">
            <div class="numbered_section__number">01.</div>
@@ -149,10 +155,14 @@
            </div>
        </section>
        <section class="partners-section">
-           <a href="" class="partners-section__item"><img src="" alt=""></a>
-           <a href="" class="partners-section__item"><img src="" alt=""></a>
-           <a href="" class="partners-section__item"><img src="" alt=""></a>
-           <a href="" class="partners-section__item"><img src="" alt=""></a>
+          <div class="container">
+           <div class="row">
+            <a href="#" class="partners-section__item col-xl-2 col-lg-2 col-md-2 col-sm-2 offset-xl-2"><img src="/app/img/brand4.png" alt="Bizduh" class="partners-section__item-image"></a>
+            <a href="#" class="partners-section__item col-xl-2 col-lg-2 col-md-2 col-sm-2"><img src="/app/img/brand3.png" alt="SharedSpace" class="partners-section__item-image"></a>
+           <a href="#" class="partners-section__item col-xl-2 col-lg-2 col-md-2 col-sm-2"><img src="/app/img/brand2.png" alt="Wegabyte" class="partners-section__item-image"></a>
+           <a href="#" class="partners-section__item col-xl-2 col-lg-2 col-md-2 col-sm-2"><img src="/app/img/brand1.png" alt="inkPink" class="partners-section__item-image"></a>
+           </div>
+          </div>
        </section>
    </main>
    <footer class="footer">
