@@ -1,6 +1,6 @@
 .entry-section {
     background-image: url(/app/img/homebg1.jpg);
-    padding: 200px 0 250px;
+    padding: 200px 0 150px;
     text-align: center;
     
     .entry-section__company-name {
@@ -10,6 +10,33 @@
         font-weight: 700;
         letter-spacing: 1.3px;
         margin-bottom: 40px;
+    }
+    
+    .entry-section__company-motto {
+        display: block;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 7px;
+        margin-bottom: 50px;
+    }
+    
+    .big-btn {
+        display: inline-block;
+        font-family: @accent-font;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none; 
+        text-transform: uppercase;
+        color: @white;
+        padding: 18px 47px;
+        background-color: @red;
+        transition-duration: 0.1s;
+    }
+    
+    .big-btn:hover {
+        background-color: transparent;  
+        outline: solid 2px @red;
+        outline-offset: -2px;
     }
 }
 
