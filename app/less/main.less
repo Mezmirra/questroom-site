@@ -1,5 +1,6 @@
 .entry-section {
     background-image: url(/app/img/homebg1.jpg);
+    background-size: cover;
     padding: 200px 0 150px;
     text-align: center;
     
@@ -38,6 +39,47 @@
         outline: solid 2px @red;
         outline-offset: -2px;
     }
+}
+
+.numbered_section {
+    padding: 130px 0 100px;
+    
+    .numbered_section__number-wrapper {
+        font-family: @accent-font;
+        font-weight: 700;
+        opacity: 0.2;
+        
+        .numbered_section__number {
+            font-size: 72px;
+        }
+
+        .numbered_section__caption {
+            letter-spacing: 1.5px;
+        }
+    }
+    
+    .numbered_section__title {
+        font-family: @accent-font;
+        font-size: 92px;
+        font-weight: 700;
+        line-height: 100px;
+        word-wrap: break-word;
+    }
+    
+    .numbered_section__title:after {
+            display: block;
+            content: '';
+            height: 1px;
+            width: 240px;
+            background-color: @white;
+        margin: 60px 0 70px 10px;
+        }
+}
+
+.about-us_section {
+    background-image: url(/app/img/homebg2.jpg);
+    background-size: cover;
+    background-color: @red;
 }
 
 .partners-section {
