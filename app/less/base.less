@@ -34,3 +34,22 @@ html {
     display: table;
     clear: both;
 }
+
+.big-btn {
+    display: inline-block;
+    font-family: @accent-font;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none; 
+    text-transform: uppercase;
+    color: @white;
+    padding: 18px 47px;
+    background-color: @red;
+    transition-duration: 0.1s;
+}
+    
+.big-btn:hover {
+    background-color: transparent;  
+    outline: solid 2px @red;
+    outline-offset: -2px;
+}
