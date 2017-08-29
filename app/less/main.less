@@ -88,12 +88,13 @@
         
         .big-btn {
             background-color: @black;
+            border-color: @black;
             margin-top: 30px;
         }
 
         .big-btn:hover {
-            outline: none;
             color: @red;
+            border-color: @black;
         }
     }
 }
@@ -102,20 +103,216 @@
     background-image: url(/app/img/homebg3.jpg);
     background-position-x: 50%;
     background-position-y: 60%;
+    padding: 130px 0 0;
     
-    .numbered_section__feature-title {
-        font-family: @accent-font;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 36px;
+    .numbered_section__feature {
+        margin-top: 40px;
+        padding-left: 35px;
+        
+        .numbered_section__feature-title {
+            position: relative;
+            z-index: 2;
+            font-family: @accent-font;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 36px;
+        }
+
+        .numbered_section__feature-text {
+            color: @gray;
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: -0.4px;
+            padding-top: 12px;
+            margin-right: 40px;
+        }
     }
     
-    .numbered_section__feature-text {
-        color: @gray;
-        font-size: 18px;
-        line-height: 30px;
-        letter-spacing: -0.4px;
-        padding-top: 12px;
+    .numbered_section__feature:before {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: -41px;
+        content: none;
+        color: @red;
+        opacity: 0.5;
+        font-size: 100px;
+        font-weight: 700;
+    }
+    .numbered_section__feature1:before {
+        content: 'H';
+    }
+    
+    .numbered_section__feature2:before {
+        content: 'A';
+    }
+    
+    .numbered_section__feature3:before {
+        content: 'W';
+    }
+    
+    .numbered_section__feature4:before {
+        content: 'H';
+    }
+}
+
+.statistics-section {
+    padding: 80px 0 75px;
+    background-color: @red-trans;
+    margin-top: 100px;
+    text-align: center;
+    
+    .statistics-section__item {
+        
+        .statistics-section__item-icon {
+            display: block;
+            padding-bottom: 30px;
+            font-size: 60px;
+            color: @black;
+        }
+        
+        .statistics-section__item-number {
+            display: block;
+            font-family: @accent-font;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 40px;
+        }
+        
+        .statistics-section__item-description {
+            display: block;
+            color: @black;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 40px;
+            letter-spacing: -0.5px;
+            
+        }
+    }
+}
+
+.rooms-section {
+    background-image: url(/app/img/homebg4.jpg);
+    background-size: cover;
+    
+    .rooms-section__rooms-wrapper {
+        text-align: center;
+        
+        .rooms-section__room {
+            padding-top: 205px; 
+            padding-bottom: 200px;
+            padding-left: 45px;
+            text-align: left;
+            font-family: @accent-font;
+            
+            .rooms-section__rooms-title {
+                display: block;
+                margin-bottom: 35px;
+                color: @white;
+                text-decoration: none;
+                text-transform: capitalize;
+                font-size: 29px;
+                font-weight: 700;
+                letter-spacing: 2.5px;
+                line-height: 50px;
+                transition-duration: 0.3s;
+            }
+            
+            .rooms-section__rooms-title:hover {
+                color: @red;
+            }
+            
+            .rooms-section__rooms-info {
+                font-size: 10px;
+                font-weight: 600;
+                letter-spacing: -0.4px;
+                
+                .rooms-section__rooms-info-for {
+                    margin-right: 10px;
+                }
+                
+                i {
+                    color: @red;
+                    font-size: 12px;
+                    margin-right: 10px;
+                }
+                
+                strong {
+                    display: inline-block;
+                    margin-right: 5px;
+                    font-size: 12px;
+                }
+            }
+            
+            .rooms-section__rooms-info:before {
+                display: inline-block;
+                content: '';
+                background-color: @red;
+                height: 2px;
+                width: 25px;
+                margin: 0 10px 4px 10px;
+            }
+        }
+        
+        .rooms-section__room1 {
+            background-image: url(/app/img/project1-370x491.jpg);
+            background-size: cover;
+        }
+        
+        .big-btn {
+            margin-top: 50px;
+        }
+    }
+}
+
+.booking-section {
+    background-image: url(/app/img/homebg5.jpg);
+    background-size: cover;
+    padding: 90px 0 90px;
+    text-align: right;
+    
+    .booking-section__title {
+        display: block;
+        font-family: @accent-font;
+        font-size: 92px;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+}
+
+.news-section {
+    background-image: url(/app/img/homebg6.jpg);
+    background-size: cover;
+    padding: 130px 0 60px;
+    
+    .news-section__news-item-image {
+        margin-bottom: 25px;
+    }
+    
+    .news-section__news-item-title {
+        display: block;
+        color: @white;
+        font-family: @accent-font;
+        font-size: 24px;
+        font-weight: 700;
+        text-decoration: none;
+        letter-spacing: 2px;
+        line-height: 24px;
+        word-wrap: break-word;
+        margin-bottom: 10px;
+        transition-duration: 0.3s;
+    }
+    
+    .news-section__news-item-title:hover {
+        color: @red;
+    }
+    
+    .news-section__news-item-info-wrapper {
+        font-size: 14px;
+        
+        .news-section__news-item-info-date {
+            padding-right: 10px;
+        }
     }
 }
 
