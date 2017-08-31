@@ -199,6 +199,7 @@
         text-align: center;
         
         .rooms-section__room {
+            position: relative;
             padding-top: 205px; 
             padding-bottom: 200px;
             padding-left: 45px;
@@ -206,6 +207,7 @@
             font-family: @accent-font;
             
             .rooms-section__rooms-title {
+                position: relative;
                 display: block;
                 margin-bottom: 35px;
                 color: @white;
@@ -216,6 +218,7 @@
                 letter-spacing: 2.5px;
                 line-height: 50px;
                 transition-duration: 0.3s;
+                z-index: 3;
             }
             
             .rooms-section__rooms-title:hover {
@@ -223,12 +226,16 @@
             }
             
             .rooms-section__rooms-info {
+                position: relative;
+                z-index: 4;
                 font-size: 10px;
                 font-weight: 600;
                 letter-spacing: -0.4px;
                 
                 .rooms-section__rooms-info-for {
                     margin-right: 10px;
+                    position: relative;
+                    z-index: 5;
                 }
                 
                 i {
@@ -254,7 +261,27 @@
             }
         }
         
+        .rooms-section__room:before {
+            position: absolute;
+            content: '';
+            background-color: rgba(37, 37, 37, 0.3);
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        
         .rooms-section__room1 {
+            background-image: url(/app/img/project1-370x491.jpg);
+            background-size: cover;
+        }
+        
+        .rooms-section__room2 {
+            background-image: url(/app/img/project1-370x491.jpg);
+            background-size: cover;
+        }
+        
+        .rooms-section__room3 {
             background-image: url(/app/img/project1-370x491.jpg);
             background-size: cover;
         }

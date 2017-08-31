@@ -1,19 +1,28 @@
 .header__top-panel {
     background-color: @back-black;
-    line-height: 19px;
+    line-height: 33px;
     font-size: 13px;
     padding: 7px 0;
     
     .header__top-panel-message {
-        line-height: 33px;
         float: left;
     }
     
     .header__top-panel-info {
         float: right;
         
-        .header__top-panel-info-contacts-img {
-            fill: @red;
+        .header__top-panel-info-contacts {
+            display: inline-block;
+        }
+        
+        .header__top-panel-info-search {
+            display: inline-block;
+            padding-left: 45px;
+            
+            i {
+                color: @red;
+                font-size: 15px;
+            }
         }
     }
 }
