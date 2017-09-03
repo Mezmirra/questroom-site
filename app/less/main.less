@@ -200,23 +200,22 @@
         
         .rooms-section__room {
             position: relative;
-            padding-top: 205px; 
-            padding-bottom: 200px;
-            padding-left: 45px;
+            padding: 205px 40px 200px 45px;
             text-align: left;
             font-family: @accent-font;
             
             .rooms-section__rooms-title {
                 position: relative;
                 display: block;
-                margin-bottom: 35px;
+                height: 65px;
+                margin-bottom: 20px;
                 color: @white;
                 text-decoration: none;
                 text-transform: capitalize;
                 font-size: 29px;
                 font-weight: 700;
                 letter-spacing: 2.5px;
-                line-height: 50px;
+                line-height: 35px;
                 transition-duration: 0.3s;
                 z-index: 3;
             }
@@ -256,7 +255,7 @@
                 content: '';
                 background-color: @red;
                 height: 2px;
-                width: 25px;
+                width: 30px;
                 margin: 0 10px 4px 10px;
             }
         }
@@ -271,18 +270,26 @@
             right: 0;
         }
         
+        .rooms-section__room:hover:before {
+            background-color: rgba(239,64,53,0.1);
+            
+            .rooms-section__rooms-title {
+                color: @red-trans;
+            }
+        }
+        
         .rooms-section__room1 {
             background-image: url(/app/img/project1-370x491.jpg);
             background-size: cover;
         }
         
         .rooms-section__room2 {
-            background-image: url(/app/img/project1-370x491.jpg);
+            background-image: url(/app/img/project2-370x491.jpg);
             background-size: cover;
         }
         
         .rooms-section__room3 {
-            background-image: url(/app/img/project1-370x491.jpg);
+            background-image: url(/app/img/project3-370x491.jpg);
             background-size: cover;
         }
         
